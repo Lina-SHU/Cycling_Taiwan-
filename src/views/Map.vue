@@ -9,6 +9,7 @@
 <script>
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
+import Wkt from 'wicket'
 import Header from '../components/Header.vue'
 import Search from '../components/Search.vue'
 
@@ -66,7 +67,7 @@ export default ({
       })
     },
     getPolyline (geo) {
-      const wicket = new L.Wkt.Wkt()
+      const wicket = new Wkt.Wkt()
       const geojsonFeature = wicket.read(geo).toJson()
       const myStyle = {
         color: 'blue',

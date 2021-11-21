@@ -109,7 +109,7 @@ export default {
         .then((res) => {
           if (res.status === 200) {
             this.bikeWay = res.data
-            // this.$emit('getMapdata', this.bikeWay)
+            this.$emit('getMapdata', this.bikeWay)
           }
         })
     }
