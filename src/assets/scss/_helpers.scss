@@ -1,0 +1,62 @@
+.nav-link.active{
+  border-bottom: 8px solid $primary;
+  padding-bottom: 28px;
+}
+
+.nav-link{
+  padding-bottom: 36px;
+  &:hover{
+    border-bottom: 8px solid $primary;
+    padding-bottom: 28px;
+  }
+}
+
+#mapid{
+  height: calc(100vh - 65px);
+  z-index: 1;
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - 114px);
+  }
+}
+
+.bg-color{
+  background: rgba(0, 0, 0, .3);
+  backdrop-filter: blur(70px);
+}
+
+.bg-card-color{
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(70px);
+}
+
+.search{
+  max-width: 440px;
+  position: absolute;
+  top: 166px;
+  left: 80px;
+  z-index: 10;
+  border-radius: 20px;
+}
+
+.countryList{
+  width: 440px;
+  position: absolute;
+  top: 0;
+  left: 450px;
+  border-radius: 20px;
+}
+
+.searchResults{
+  max-height: 400px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none; 
+  }
+}
+
+.search-item{
+  img{
+    top: 15px;
+    left: 28px;
+  }
+}
